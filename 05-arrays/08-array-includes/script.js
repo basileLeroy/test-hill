@@ -12,7 +12,7 @@
 (function() {
 
     const fruits = [
-        "apple",
+        
         "perry",
         "strawberry",
         "tomato",
@@ -26,6 +26,17 @@
         "cherry",
     ];
 
+    let button = document.querySelector('#run');
+
     // your code here
+
+    button.addEventListener('click', function() {
+        if (fruits.includes("apple")) {
+            console.log('Yes');
+        } else {
+            console.log('no');
+        };
+        
+    })
 
 })();
